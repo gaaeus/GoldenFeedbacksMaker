@@ -88,6 +88,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Assets\itext7buildingblocks.pdf" />
+    <None Include="Assets\itext7jump-starttutorial.pdf" />
     <None Include="Assets\ptsans\PT_Sans-Web-Bold.ttf" />
     <None Include="Assets\ptsans\PT_Sans-Web-BoldItalic.ttf" />
     <None Include="Assets\ptsans\PT_Sans-Web-Italic.ttf" />
