@@ -29,13 +29,16 @@ namespace GoldenFeedbacksMaker
             var writer = new PdfWriter(DEST);
             var pdf = new PdfDocument(writer);
             var document = new Document(pdf, PageSize.A4);
+
+            
+
             //document.SetMargins(20, 20, 20, 20);
 
             for (var i = 1; i < 4; i++)
             {
                 Question q = new Question();
-                q.Number = 1;
-                q.Content = "Thisis a question";
+                q.Number = i;
+                q.Content = "Thisis aquesti on :P";
                 document.Add(q.GetQuestion());
 
                 Answer a = new Answer();

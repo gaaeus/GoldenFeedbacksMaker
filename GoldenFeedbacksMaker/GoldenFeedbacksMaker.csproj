@@ -100,5 +100,8 @@
     <None Include="Assets\ptserif\PT_Serif-Web-Regular.ttf" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EventHandlers\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
