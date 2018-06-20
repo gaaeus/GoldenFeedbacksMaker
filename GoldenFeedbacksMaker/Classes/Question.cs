@@ -1,4 +1,5 @@
-﻿using iText.Layout.Element;
+﻿using iText.Kernel.Colors;
+using iText.Layout.Element;
 
 namespace GoldenFeedbacksMaker.Classes
 {
@@ -15,7 +16,7 @@ namespace GoldenFeedbacksMaker.Classes
             Text number = new Text($"{Number}. ").SetFont(boldFont);
             Text content = new Text(Content).SetFont(regularFont);
 
-            return new Paragraph().Add(number).Add(content);
+            return new Paragraph().Add(number).Add(content).SetBorderBottom(new iText.Layout.Borders.RoundDotsBorder(new DeviceCmyk(0, 0, 0, 0.5f), 1.0f));
         }
     }
 }
