@@ -83,6 +83,7 @@
     <Compile Include="Classes\Comment.cs" />
     <Compile Include="Classes\Question.cs" />
     <Compile Include="Common.cs" />
+    <Compile Include="Helpers\HeaderFooterHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
