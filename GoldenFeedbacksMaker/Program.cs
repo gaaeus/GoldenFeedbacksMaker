@@ -22,7 +22,7 @@ namespace GoldenFeedbacksMaker
             var pdf = new PdfDocument(writer);
             var document = new Document(pdf, PageSize.A4);
 
-            //document.SetMargins(20, 20, 20, 20);
+            document.SetMargins(50, 50, 50, 50);
 
             for (var i = 1; i < 10; i++)
             {
@@ -44,7 +44,7 @@ namespace GoldenFeedbacksMaker
 
             HeaderFooterHelper headerFooterHelper = new HeaderFooterHelper();
             Document doc = new Document(pdf);
-            headerFooterHelper.AddHeaderAndFooter(pdf, ref doc, "The Golden Feedbacks 2018 - Anatomy", 1, 1);
+            headerFooterHelper.AddHeaderAndFooter(pdf, ref doc, "The Golden Feedbacks 2018 - Anatomy", 1, 3);
 
             document.Close();
         }
