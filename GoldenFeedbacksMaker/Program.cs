@@ -35,9 +35,13 @@ namespace GoldenFeedbacksMaker
             var pdf = new PdfDocument(writer);
             var document = new Document(pdf, PageSize.A4);
 
+            var chapter = string.Empty;
+
             document.SetMargins(50, 50, 50, 50);
 
+            HeaderFooterHelper headerFooterHelper = new HeaderFooterHelper();
             DataTable dtQuestions = GetQuestions();
+            Document doc = new Document(pdf);
 
             for (var i = 0; i < dtQuestions.Rows.Count; i++)
             {
@@ -58,11 +62,11 @@ namespace GoldenFeedbacksMaker
                     c.Content = dtQuestions.Rows[i]["Comment"].ToString();
                     document.Add(c.GetComment());
                 }
-            }
 
-            HeaderFooterHelper headerFooterHelper = new HeaderFooterHelper();
-            Document doc = new Document(pdf);
-            headerFooterHelper.AddHeaderAndFooter(pdf, ref doc, "The Golden Feedbacks 2018 - Anatomy", 1, 1);
+                chapter = dtQuestions.Rows[i]["Chapter"].ToString();
+
+                headerFooterHelper.AddHeaderAndFooter(pdf, ref doc, $"The Golden Feedbacks 2018 - {dtQuestions.Rows[i]["Chapter"]}", 1, 2);
+            }
 
             document.Close();
         }
