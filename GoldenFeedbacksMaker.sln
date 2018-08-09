@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenFeedbacksMaker", "GoldenFeedbacksMaker\GoldenFeedbacksMaker.csproj", "{644EAB33-395B-4B00-B0E7-468E864E657D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenFeedbacks.UI", "GoldenFeedbacks.UI\GoldenFeedbacks.UI.csproj", "{DD0A4D54-A16A-4F83-99B8-2AE116217C54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itextsharp", "iTextSharp-4.1.6-master\itextsharp.csproj", "{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{644EAB33-395B-4B00-B0E7-468E864E657D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{644EAB33-395B-4B00-B0E7-468E864E657D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{644EAB33-395B-4B00-B0E7-468E864E657D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0A4D54-A16A-4F83-99B8-2AE116217C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0A4D54-A16A-4F83-99B8-2AE116217C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0A4D54-A16A-4F83-99B8-2AE116217C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0A4D54-A16A-4F83-99B8-2AE116217C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84C4FDD9-3ED7-453B-B9DA-B3ED52CB071C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

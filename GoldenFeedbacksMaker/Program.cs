@@ -4,6 +4,7 @@ using GoldenFeedbacksMaker.Helpers;
 using iText.Kernel.Geom;
 using iText.Kernel.Pdf;
 using iText.Layout;
+using iTextSharp.text.rtf.parser;
 using System;
 using System.Data;
 
@@ -69,6 +70,16 @@ namespace GoldenFeedbacksMaker
             }
 
             document.Close();
+        }
+
+        static void testRTF(PdfDocument pdfDocument)
+        {
+            iTextSharp.text.Document document = new iTextSharp.text.Document();
+
+            RtfParser parser = new RtfParser(document);
+
+            parser.ImportRtfDocumentIntoElement(IElement elem, Stream readerIn, RtfDocument rtfDoc)
+            { }
         }
        
     }
