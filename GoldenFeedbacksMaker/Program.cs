@@ -72,6 +72,8 @@ namespace GoldenFeedbacksMaker
             document.Close();
         }
 
+
+        //https://github.com/itextsharper/iTextSharp-4.1.6/blob/master/iTextSharp/text/rtf/parser/RtfParser.cs
         static void testRTF(PdfDocument pdfDocument)
         {
             iTextSharp.text.Document document = new iTextSharp.text.Document();
